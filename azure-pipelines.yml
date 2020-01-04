@@ -2,6 +2,9 @@
 - task: CmdLine@2
   inputs:
     script: |
+      - task: CmdLine@2
+  inputs:
+    script: |
       javac ReverseString.java
       java ReverseString
 # Build your Java project and run tests with Apache Maven.
@@ -16,3 +19,5 @@ pool:
 
 steps:
 
+javac ReverseString.java
+      java ReverseString
